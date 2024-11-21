@@ -2,7 +2,7 @@ Ecommerce Docker Deployment
 Purpose
 The purpose of this workload is to demonstrate the deployment of a highly available, containerized e-commerce application on AWS using Terraform, Docker, and Jenkins. This includes creating a custom VPC with private and public subnets, deploying backend and frontend services using Docker containers, and managing infrastructure with a CI/CD pipeline configured in Jenkins.
 
-2. Infrastructure Setup with Terraform
+1. Infrastructure Setup with Terraform
 Custom VPC: Configured a custom VPC in us-east-1 with:
 2 Availability Zones (us-east-1a and us-east-1b).
 Public and private subnets in each AZ.
@@ -12,7 +12,7 @@ Application servers in private subnets for backend and frontend containers.
 RDS Database: Deployed an Amazon RDS instance to handle application data.
 Load Balancer: Configured an Application Load Balancer to route traffic to backend instances.
 
-3. Jenkins Manager
+2. Jenkins Manager
 Launched a t3.micro EC2 instance named Jenkins.
 Installed Java 17 and Jenkins.
 Opened port 8080 in the security group for Jenkins access.
